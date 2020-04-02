@@ -1,0 +1,39 @@
+form(action="" name="main-order").b-form
+  h3.__title Оформить заявку
+  .row
+    .col-sm-6
+      .__line.--full
+        label(for="main-order__name") Ваше имя
+        input(type="text" name="main-order__name" requried)#main-order__name
+      .__line.--full
+        label(for="main-order__tel") Контактный телефон
+        input(type="tel" name="main-order__tel" requried)#main-order__tel
+    .col-sm-6
+      .__line.--full
+        label(for="main-order__auto") Марка автомобиля
+        input(type="text" name="main-order__auto" requried)#main-order__auto
+      .__line.--full
+        label(for="main-order__type") Тип обшивки
+        select(name="main-order__type" requried)#main-order__type
+          option(value="Пол") Пол
+          option(value="Пол + Борт") Пол + Борт
+          option(value="Пол + Борт + Арки + Двери") Пол + Борт + Арки + Двери
+          option(value="Полная") Полная
+  .row.__line
+    .col
+      input#main-order__opt1(type="checkbox" name="main-order__opt1" value="Настил подложки")
+      label(for="main-order__opt1") Настил подложки
+    .col
+      input#main-order__opt2(type="checkbox" name="main-order__opt2" value="Антикоррозийная обработка")
+      label(for="main-order__opt2") Антикоррозийная обработка
+    .col
+      input#main-order__opt3(type="checkbox" name="main-order__opt3" value="Ламинированная фанера")
+      label(for="main-order__opt3") Ламинированная фанера
+    .col
+      input#main-order__opt4(type="checkbox" name="main-order__opt4" value="Утепление кузова")
+      label(for="main-order__opt4") Утепление кузова
+  .__line.--full
+    label Комментарий к заказу
+    textarea(name="main-order__msg", rows="5")
+  .b-btn-wrap.--center
+    button(type="submit").btn Отправить заявку

@@ -1,0 +1,32 @@
+.offer
+  position: relative
+  background-color: $c-sec
+  padding: 6*$lg 0
+  color: #fff
+  &__txt
+    +r(lg)
+      +col(1/2)
+
+  &__title
+    color: $c-brand
+    text-transform: uppercase
+    font-size: 58px
+    font-weight: bold
+    line-height: 1.2
+  &__title-sub
+    font-weight: bold
+    font-size: 26px
+    line-height: 1.2
+    margin-top: 2*$lg
+    +rmax(lg)
+      margin-bottom: 2*$lg
+  &__img
+    background: url("../img/index-offer.jpg") no-repeat center
+    background-size: cover
+    min-height: 400px
+    +r(lg)
+      position: absolute
+      top: 0
+      left: 50%
+      height: 100%
+      width: 50%

@@ -1,0 +1,69 @@
+extend ./part/_base
+block var
+  - var current = "Home";
+
+block content
+  .b-offer
+    .container
+      .row
+        .__txt.col
+          .__title ОБШИВКА <br> ФАНЕРОЙ КУЗОВА<br> ФУРГОНА
+          .__title-sub * Работаем со всеми<br> марками    автотранспорта
+    .__img
+  .section.b-index-about
+    .container
+      .row
+        .col-sm-6.mb-4
+          img(src="../../assets/img/bus-plywood.jpg", alt="Обшивка кузова фанерой")
+        .col-sm-6.mb-4
+          h2.title Обшивка кузова фанерой
+          p Обшивка кузова фанерой позволяет снизить риск повреждения перевозимых товаров и самого автомобиля, а значит гарантировать качество работы. Цены и виды работ делаются под каждую машину индивидуально, вы захотели — мы сделали.
+          p Стоимость обшивки зависит от таких факторов как: объём грузового отсека, вариант услуги и применяемый в работе материал. Обшивка фургона может быть сделана как частично — пол, борта, потолок, колёсные арки и перегородка, так и полностью — вкруговую.
+          p еще больше теста про преимущества и материалы. еще больше теста про преимущества и материалы еще больше теста про преимущества и материалыеще больше теста про преимущества и материалы
+
+  section.section
+    .container
+      .card-list
+        .b-card
+          .__img
+            img(src="../../assets/img/content/service-card-pol.jpg", alt="")
+          h2.__title Обшивка фанерой <br>«Пол»
+          .__price от 320 руб.
+
+        .b-card
+          .__img
+            img(src="../../assets/img/content/service-card-bort.jpg", alt="")
+          h2.__title Обшивка фанерой <br>«Пол + Борт»
+          .__price от 600 руб.
+
+        .b-card
+          .__img
+            img(src="../../assets/img/content/service-card-door.jpg", alt="")
+          h2.__title Обшивка фанерой <br>«Пол + Борт + Арки + Двери»
+          .__price от 1000 руб.
+
+        .b-card
+          .__img
+            img(src="../../assets/img/content/service-card-full.jpg", alt="")
+          h2.__title Обшивка фанерой <br>«Полная»
+          .__price от 1250 руб.
+
+  section.section.bgc-light
+    .container
+      include ./part/global/_form-order.pug
+
+  section.section.bgc-dark
+    .container
+      h3.title Наши работы
+    include ./part/pages/index-portfolio.pug
+
+  section.section
+    .container
+      h2.title Переоборудование автомобилей
+      include ./part/pages/index-promo-service.pug
+
+    //- img(src="../../img/svg-sprite/play.svg", alt="")
+
+
+
+//- Content page_______________________________________

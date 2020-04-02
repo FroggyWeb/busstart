@@ -1,0 +1,40 @@
+
+.page
+  display: flex
+  width: 100%
+  min-height: 100vh
+  overflow: hidden
+  flex-direction: column
+
+.page__content
+  flex: 1 0 auto
+
+// .container
+//   margin-left: auto
+//   margin-right: auto
+//   max-width: 1400px
+//   padding: 0 20px
+//   +r(sm)
+//     padding: 0 30px
+
+// .row
+//   +row()
+
+.section
+  padding: 2*$l-g 0
+  +r(sm)
+    padding: 4*$l-g 0
+
+.bgc-light
+  background-color: #eee
+
+.bgc-dark
+  background-color: $c-sec
+
+.title
+  font-size: 32px
+  margin: 0 0 .5em
+  color: $c-brand
+  line-height: 1.2
+  +r(sm)
+    font-size: 36px

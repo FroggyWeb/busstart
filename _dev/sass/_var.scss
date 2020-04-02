@@ -1,0 +1,44 @@
+$breakpoints: (
+  'xs': 460px,
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px,
+  'xxl': 1400px
+) !default;
+
+$f-base: 14px/1.4 "Roboto", sans-serif;
+$f-title: "Roboto", serif;
+$f-color: #555;
+
+$l-g: 15px;
+$lg: $l-g;
+
+$c-main: #59595A;
+$c-brand: #96AC10;
+$c-sec: #332B2B;
+$c-text: #000;
+$c-link: inherit;
+$c-active: inherit;
+
+// bootstrap setup
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+$container-max-widths: (
+  xxl: 1400px
+);
+
+@include font("Roboto", "roboto-regular-webfont", 400 );
+@include font("Roboto", "roboto-black-webfont", 700 );
+// @include font("Philosopher", "philosopher-bold-webfont", 700 );
+// @include font("PT Sans", "pt_sans-web-regular-webfont", 400);
+// @include font("PT Sans", "pt_sans-web-italic-webfont", 400 , italic);
+// @include font("PT Sans", "pt_sans-web-bolditalic-webfont", 700, italic);
+// @include font("PT Sans", "pt_sans-web-bold-webfont", 700);

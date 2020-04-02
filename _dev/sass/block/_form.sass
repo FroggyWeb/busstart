@@ -1,0 +1,53 @@
+input,
+select,
+textarea
+  padding: .5em 1em
+  border-radius: 10px
+  border: 1px solid rgba($c-main, .5)
+  &:focus
+    outline: none
+    background-color: #5e63421a
+
+.btn-wrap
+  margin-top: 2*$lg
+  &--center
+    text-align: center
+
+.btn
+  display: inline-block
+  text-align: center
+  border: none
+  border-radius: 10px
+  background-color: $c-brand
+  font-size: 18px
+  padding: .5em 1.5em
+  color: #fff
+  cursor: pointer
+  user-select: none
+
+.form
+  margin: auto
+  label
+    font-weight: bold
+    color: $c-main
+    margin-bottom: .25em
+    display: inline-block
+  &__title
+    color: $c-main
+    font-size: 28px
+    margin-bottom: 1em
+    border-bottom: 1px solid
+    color: $c-brand
+  &--small
+    max-width: 800px
+    padding: 20px 40px
+    box-shadow: 0 0 50px rgba(#000, .15)
+
+.form__line
+  margin-bottom: 1.5*$lg
+  &--full
+    input,
+    select,
+    textarea
+      display: block
+      width: 100%

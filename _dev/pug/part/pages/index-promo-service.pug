@@ -1,0 +1,42 @@
+.b-promo-service
+  .__wrap
+    ul.__list.--left
+      li.__item изготовление и монтаж<br> стеллажей
+      li.__item тепло- и шумоизоляция<br> автомобилей
+      li.__item врезка и монтаж люков и окон, <br>a также их замена
+      li.__item изготовления <br>перегородок
+    .__img
+      img(src="../../../../assets/img/service-promo.jpg", alt="Услуги по переоборудованию автомобилей")
+    ul.__list.--right
+      li.__item оклейка салона <br>в кожзам и велюр
+      li.__item оклейка рифленым<br> алюминием
+      li.__item реставрация <br>салона
+      li.__item пошив чехлов, <br>перетяжка сидений
+
+  footer.__footer
+    .__txt Стоимость и виды работ<br> уточняйте по телефону
+      .__tel +375 (29) <b>162-87-96</b>
+
+    .section
+        .b-advance
+          .__item Гарантия <br>на все виды работ
+          .__item Качественные материалы <br>и аккуратное исполнение
+          .__item Квалифицированный<br> персонал
+
+  form.b-form.--small
+    h3.__title Узнайте стоимость работ
+    .__line.--full
+      label(for="srv__name") Ваше имя
+      input(type="text" name="srv__name" requried)#srv__name
+    .__line.--full
+      label(for="srv__tel") Контактный телефон
+      input(type="tel" name="srv__tel" requried)#srv__tel
+    .__line.--full
+      label(for="srv__auto") Марка автомобиля
+      input(type="text" name="srv__auto" requried)#srv__auto
+    .__line.--full
+      label Интересующие услуги
+      textarea(name="srv__msg", rows="5")
+
+    .b-btn-wrap.--center
+      button(type="submit").btn Узнать цену

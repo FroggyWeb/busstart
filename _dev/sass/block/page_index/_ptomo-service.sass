@@ -1,0 +1,96 @@
+.promo-service
+  &__wrap
+    display: flex
+    flex-direction: column
+    position: relative
+    +r(sm)
+      flex-direction: row
+    +r(lg)
+      justify-content: center
+      align-items: center
+  &__img
+    position: absolute
+    z-index: -1
+    top: 0
+    height: 100%
+    +rmax(lg)
+      right: -250px
+      width: 500px
+      opacity: .5
+    +r(lg)
+      left: 50%
+      transform: translateX(-50%)
+    img
+      height: 100%
+      width: 100%
+      object-fit: contain
+  &__list
+    margin: 0
+    padding: 0
+    list-style: none
+    font-weight: bold
+    font-size: 16px
+    +r(lg)
+      width: 50%
+    +r(xxl)
+      font-size: 22px
+      // position: absolute
+  &__item
+    padding: 2em 0
+    position: relative
+    flex: 0 0 auto
+    line-height: 1.2
+    &:before
+      content: ""
+      position: absolute
+      top: 50%
+      width: 2em
+      height: 4em
+      background: url("../../../../assets/img/service-round.svg") no-repeat
+      background-size: cover
+      transform: translate(0, -50%)
+    +rmax(lg)
+      padding: 1em 0 1em 40px
+      &:before
+        left: 0
+        width: 1.5em
+        height: 3em
+  &__footer
+    margin: 2*$lg 0 4*$lg
+    text-align: center
+    font-size: 22px
+    line-height: 1.2
+    color: $c-main
+    +r(sm)
+      font-size: 28px
+  &__tel
+    font-size: 1.5em
+
+.promo-service__list--left
+  +r(lg)
+    text-align: right
+    padding-right: 10em
+    .promo-service__item
+      padding-right: 1.5em
+      &:nth-child(2),
+      &:nth-child(3)
+        left: -3em
+      &:before
+        right: 0
+
+
+.promo-service__list--right
+  +r(sm)
+    margin-left: 2*$lg
+
+  +r(lg)
+    padding-left: 10em
+    .promo-service__item
+      padding-left: 1.5em
+      &:nth-child(2),
+      &:nth-child(3)
+        left: 3em
+      &:before
+        left: 0
+        transform: translate(0, -50%) rotate(180deg)
+

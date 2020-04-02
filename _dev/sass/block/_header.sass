@@ -1,0 +1,30 @@
+.page-header
+  &__wrap
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    padding: 2*$lg 0
+  &__logo
+    display: inline-block
+    margin-right: 2*$lg
+    max-width: 180px
+    +rmax(lg)
+      max-width: 140px
+    +rmax(xs)
+      margin-bottom: $lg
+  &__tel
+    font-size: 18px
+    text-decoration: none
+    +rmax(sm)
+      margin-top: $lg
+    +r(sm)
+      margin-left: auto
+  &__slogan
+    line-height: 1.2
+    margin: 0 $lg 0 0
+    font-size: 18px
+    color: $c-main
+  &__title
+    display: flex
+    flex-wrap: wrap
+
